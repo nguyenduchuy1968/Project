@@ -1,0 +1,128 @@
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+    h2 , .tabPanel h2 {
+        font-size: 1.5rem;
+    }
+
+    /*-----------------------------------------------*/
+    .word-wrap {
+        width: 100%;
+        word-wrap: unset;
+    }
+
+    /*-----------------------------------------------*/
+    .menu {
+        display: flex;
+        height: 60px;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+    }
+
+    /*-----------------------------------------------*/
+    a.tabPanel_operations__link {
+        height: 110px;
+    }
+
+    .tabPanel__form {
+        width: 100%;
+    }
+
+    .tabPanel__operations {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 110px);
+    }
+
+    /*-----------------------------------------------*/
+    .postServicesWrapper {
+        padding-top: 300px;
+
+    }
+
+    .postServices {
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .postServices__desc {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .postServices__delivery {
+        width: 83.33%;
+        grid-template-columns: 370px;
+        grid-template-rows: repeat(6, 180px);
+        justify-content:center;
+    }
+
+    /*-----------------------------------------------*/
+    .infoModule .button-resize, .infoModule button, .searchInfo input {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .financeServices__operations {
+        grid-template-columns: 270px;
+        grid-template-rows: repeat(3, 240px);
+        justify-content:center;
+    }
+
+    .financeServices h2 {
+        text-align: center;
+    }
+
+    .details__resize {
+        height: 240px;
+    }
+
+    .financeServices__wrapper {
+        padding: 100px 0;
+    }
+
+    /*-----------------------------------------------*/
+    .news__board {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4, 300px);
+        gap: 30px;
+    }
+
+    .news-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-img {
+        padding: 0;
+
+    }
+
+    /*-----------------------------------------------*/
+    .lgp__prefers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 92px);
+        gap: 30px;
+    }
+
+    /*-----------------------------------------------*/
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 159px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__column {
+        padding-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .footer__column > p:first-child {
+        margin-bottom: 10px;
+    }
+
+}

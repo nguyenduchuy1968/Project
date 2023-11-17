@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@400;700&display=swap');
+
+
+:root {
+    --color-primary: #FFF;
+    --color-secondary: #F8F8F8;
+    --font-primary: 'Rubik', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --color-text: #0E2F4B;
+    --color-text-secondary: #99A2AA;
+    --color-button: #FDC13D;
+}
+
+/*html {*/
+/*    -webkit-text-size-adjust: 100%;*/
+/*    -ms-text-size-adjust: 100%;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+/* Common setting for some elements*/
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 13px;
+}
+
+ h4:first-child {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0;
+}
+
+a, button {
+    text-decoration: none;
+    color: var(--color-text);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+input, button {
+    border: none;
+}
+
+button {
+    background-color: var(--color-button) ;
+}
+
+button:hover, button:hover {
+    background-color: #fe9c24;
+    border: 2px solid #F8F8F8;
+    color: #F8F8F8;
+}
+
+/* private class to split text of some <h2> paragraph to the second line */
+.word-wrap {
+    width: 250px;
+    word-wrap: break-word;
+}
+
+/* The containers below have the same width and align in center of the page  */
+.header, .tabPanel, .tabPanel__info, .postServices, .financeServices, .financeServices__info, .infoModule, .news,
+.legal-person-block, .online-services, .footer {
+    width: 83.33vw;
+    margin: 0 auto;
+}
+
+/********************************* Content-Main *********************************/
+
+/*--------------------------- Tab Panel ----------------------*/
+/*  Creation of 2 modules: tabPanel and tabPanel__info.  */
+
+.tabPanel_wrapper {
+    width: 100vw;
+    background-color: #FEC524;
+}
+
+/* tabPanel has position: relative*/
+.tabPanel {
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tabPanel h2 {
+    color: #FFF;
+    font-size: 44px;
+    margin-top: 54px;
+}
+
+.tabPanel h2:nth-child(2) {
+    margin-top: 8px;
+}
+
+.tabPanel p {
+    margin-top: 34px;
+}
+
+/* tabPanel__info has position: absolute to tabPanel,   */
+.tabPanel__info {
+    position: absolute;
+    top: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabPanel__operations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.tabPanel__form {
+    width: calc(50% - 15px);
+    height: 72px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.tabPanel__form input[type=text] {
+    width: 233px;
+    padding-left: 30px;
+}
+
+.tabPanel__form input[type=text]::placeholder {
+    color: #6C757D;
+}
+
+.tabPanel__form button {
+    padding-right: 30px;
+    background-color: var(--color-primary);}
+
+
+a.tabPanel_operations__link {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+}
+
+a.tabPanel_operations__link img {
+    margin-right: 30px;
+}
+
+/*----------------------- POST SERVICES BLOCK -----------------------*/
+/*  Creation of 2 modules: postServices_desc (for description) and postServices_delivery.  */
+
+.postServicesWrapper {
+    width: 100vw;
+    background-color: var(--color-secondary);
+    padding: 100px 0;
+}
+.postServices {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+}
+
+.postServices__desc {
+    padding: 30px 15px 0 0;
+    margin-right: 15px;
+
+    width: 33.3vw;
+}
+
+.postServices__desc h2, .finance-services h2 {
+    line-height: 60px;
+}
+
+.postServices__desc p {
+    font-family: var(--font-secondary);
+    line-height: 30px;
+    margin-top: 36px;
+}
+
+/*  postServices_delivery*/
+.postServices__delivery {
+    width: 66.66%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    justify-self: flex-end;
+}
+/* ---------------------------- EXPORT CODE BLOCK ----------------------------*/
+
+/* "EXPORT CODE BLOCK" and "ZIP CODE BLOCK" have the same structure so both use common CSS file "info-modules.css" */
+
+/*----------------------------- FINANCE SERVICES ----------------------------*/
+/*  Creation of 2 modules: financeServices__info and financeServices__operations.  */
+/*  financeServices__operations has the common element (delivery__details)  with postServices_delivery so pl., read  */
+/*  file delivery-details.css  */
+.financeServices__wrapper {
+    background-color: var(--color-secondary);
+    width: 100vw;
+    padding: 100px 0;
+}
+
+.financeServices h2 {
+    padding-bottom: 30px;
+}
+
+.financeServices__operations {
+    margin-top: 32px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: 270px;
+}
+
+.financeServices__info {
+    border-radius: 10px;
+    background: var(--color-button);
+    padding: 52px 5.2vw;
+    margin-bottom: 121px;
+}
+
+.financeServices__info p:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.financeServices__info p:nth-child(2) {
+    line-height: 30px;
+    font-family: var(--font-secondary);
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+/* ------------------------ ZIP CODE BLOCK -------------------------- */
+
+            /* "EXPORT CODE BLOCK" and "ZIP CODE BLOCK" have the same structure so both use common CSS file
+                            -pl., read file "info-modules.css" */
+/* ------------------------------------------------------------------ */
+
+
+/*-------------------------------------- NEWS BLOCK----------------------------------------*/
+.news-wrapper {
+    background-color: var(--color-secondary);
+    width: 100vw;
+}
+
+.news {
+    padding-bottom: 112px;
+}
+
+.news h2 {
+    padding: 100px 0 32px 0;
+}
+
+.news__board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 30px;
+}
+
+.news-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.news-info {
+    display: flex;
+}
+
+.info-img {
+    padding: 0 20px 24px 0;
+    width: 100px;
+    height: 100px;
+}
+.info-date {
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.info-theme {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.info-text {
+    font-family: var(--font-secondary);
+    line-height: 30px;
+}
+
+/*------------------LEGAL PERSON BLOCK-----------------*/
+
+.legal-person-block {
+    padding-bottom: 80px;
+}
+
+.lgp__prefers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 92px);
+    gap: 30px;
+}
+
+.lpg__prefers_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.legal-person-block h2 {
+    margin-bottom: 62px;
+}
+
+
+/*-------------- Online services --------------- */
+.online-services-wrapper {
+    width: 100vw;
+    background: #FEC524;
+    padding-bottom: 50px;
+}
+
+.online-services h2 {
+    padding: 90px 0 36px 0;
+    color: var(--color-primary);
+}
+
+.online-services p:nth-of-type(1){
+    font-family: var(--font-secondary);
+    line-height: 30px;
+}
+
+.online-services p:nth-of-type(2) {
+    margin: 27px 0 15px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.brands-logos {
+    display: flex;
+    gap: 24px;
+}
+
+.social-network-logos {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.online-services p:nth-of-type(3) {
+    margin: 39px 0 15px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+}

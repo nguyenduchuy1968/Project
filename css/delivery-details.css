@@ -1,0 +1,21 @@
+/*  Element delivery__details for financeServices__operations and postServices_delivery sections  */
+
+.delivery__details-wrap, .financeServices__link-wrap {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+.delivery__details, .financeServices__link {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+
+}
+
+.details__resize {
+    height: 270px;
+}
+
+

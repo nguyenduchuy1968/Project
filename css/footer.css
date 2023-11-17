@@ -1,0 +1,38 @@
+/*-------------- Footer Block ---------------*/
+.footer-wrapper {
+    width: 100vw;
+    background: #1D2023;
+    display: grid;
+    padding-bottom: 108px;
+
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 51px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--color-text-secondary);
+}
+
+.footer__column {
+    padding-right: 15px;
+}
+.footer__column > p:first-child {
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 23px;
+    color: var(--color-primary);
+}
+
+.footer__column-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer a {
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    line-height: 24px;
+}

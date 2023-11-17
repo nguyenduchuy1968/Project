@@ -1,0 +1,59 @@
+/* "EXPORT CODE BLOCK" and "ZIP CODE BLOCK" have the same structure so both use common CSS file "info-modules.css" */
+
+/* ----------------------- EXPORT CODE BLOCK ---------------------------------------- */
+.infomodule-wrapper {
+    width: 100vw;
+    background-color: #042C4B;
+}
+.infoModule {
+    padding: 120px 0;
+    margin: auto;
+    background-color: #042C4B;
+}
+
+.infoModule h2 {
+    color: var(--color-secondary);
+    line-height: 60px;
+    margin-bottom: 36px;
+}
+
+.infoModule p {
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    line-height: 22px;
+}
+
+.infoModule p:nth-of-type(2) {
+    margin-top: 8px;
+    margin-bottom: 44px;
+}
+
+.infoModule button {
+    width: 20vw;
+    height: 78px;
+    padding: 28px 3.5vw;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.infoModule .button-resize {
+    width: 305px;
+}
+
+/* ------------------------------------ ZIP CODE BLOCK ----------------------------------- */
+
+.searchInfo input {
+    width: 506px;
+    height: 78px;
+    padding: 0 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #FFF;
+    color: #6C757D;
+    text-align: left;
+}
+
+.searchInfo button {
+    padding-top: 23px;
+}

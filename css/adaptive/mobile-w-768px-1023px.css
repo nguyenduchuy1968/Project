@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .word-wrap {
+        width: 100%;
+        word-wrap: unset;
+    }
+
+    /*-----------------------------------------------*/
+    .tabPanel__form {
+        width: 100%;
+    }
+
+    .tabPanel__operations {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 72px 72px;
+    }
+
+    /*-----------------------------------------------*/
+    .postServices {
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .postServices__desc {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .postServices__delivery {
+        width: 83.33%;
+
+    }
+
+    /*-----------------------------------------------*/
+    .financeServices__operations {
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(2, 240px);
+        justify-content:center;
+    }
+
+    /*-----------------------------------------------*/
+
+    .details__resize {
+        height: 240px;
+    }
+
+    /*-----------------------------------------------*/
+    .searchInfo input {
+        width: 60vw;
+    }
+
+    /*-----------------------------------------------*/
+    .news__board {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4, 250px);
+        gap: 30px;
+    }
+
+    /*-----------------------------------------------*/
+    .lgp__prefers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 92px);
+        gap: 30px;
+    }
+
+    /*-----------------------------------------------*/
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 159px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__column {
+        padding-bottom: 40px;
+    }
+
+    .footer__column > p:first-child {
+        margin-bottom: 10px;
+    }
+
+}

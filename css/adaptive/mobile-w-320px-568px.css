@@ -92,7 +92,6 @@
         grid-template-rows: repeat(4, 300px);
         gap: 30px;
         font-size: 14px;
-
     }
 
     .news-info {
@@ -133,6 +132,7 @@
         padding-bottom: 159px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
     }
 
     .footer__column {

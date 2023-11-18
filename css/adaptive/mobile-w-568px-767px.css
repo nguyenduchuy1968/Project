@@ -92,13 +92,13 @@
     /*-----------------------------------------------*/
     .footer {
         padding-top: 100px;
-        padding-bottom: 159px;
+        /*padding-bottom: 159px;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .footer__column {
-        padding-bottom: 40px;
+        /*padding-bottom: 40px;*/
     }
 
     .footer__column > p:first-child {
